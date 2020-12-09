@@ -7,3 +7,5 @@ $(function () {
       }
   });
 });
+
+AOS.init();

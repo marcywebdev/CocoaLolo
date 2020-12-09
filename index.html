@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cocoa Lolo | Too Legit to Knit</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,11 +44,11 @@
 
   <!-- Products Section -->
   <div class="container py-5 text-center">
-    <h1 class="display-4 font-weight-bold">Products</h1>
+    <h1 class="display-4 font-weight-bold cocoa-color">Products</h1>
     <p class="font-italic text-muted mb-0">Knitted with love!</p>
     <div class="py-3">
       <div class="row">
-        <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="col-lg-6 mb-3 mb-lg-0" data-aos="fade-right">
           <div class="hover hover-5 text-white rounded"><img src="images/headwear.jpg" alt="model wearing a beanie">
             <div class="hover-overlay"></div>
             <div class="hover-5-content">
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
           <div class="hover hover-5 text-white rounded"><img src="images/plush.jpg" alt="Plush toy">
             <div class="hover-overlay"></div>
             <div class="hover-5-content">
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 mb-3 mb-lg-0">
+      <div class="col-lg-6 mb-3 mb-lg-0" data-aos="fade-right">
         <div class="hover hover-5 text-white rounded"><img src="images/babyoutfit.jpg" alt="baby outfit">
           <div class="hover-overlay"></div>
           <div class="hover-5-content">
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left">
         <div class="hover hover-5 text-white rounded"><img src="images/footwear.jpg" alt="footwear">
           <div class="hover-overlay"></div>
           <div class="hover-5-content">
@@ -93,21 +93,58 @@
   <div class="container">
 		<div class="row">
 			<div class="col-lg-6 align-self-center col-md-7">
-				<h1 class="mg-md text-center text-md-left scroll-fx-left-in about-us-h1">
+				<h1 class="mg-md text-center text-md-left cocoa-color" data-aos="fade-right">
 					About Us
 				</h1>
-				<h3 class="mg-md float-none text-center text-md-left scroll-fx-left-in">
+				<h3 class="mg-md float-none text-center text-md-left" data-aos="fade-right">
 					Know More About Cocoa Lolo!
 				</h3>
-				<p class="scroll-fx-left-in">
+				<p class="text-justify fs-1"data-aos="fade-right">
 					Cocoa Lolo specializes in hand-crafted, unique crocheted items, jewelry, sculptures, artwork, and crafts. CocoaLolo has managed to bring smiles to many faces with particularly geeky, heartwarming, adorable, items made with an admirably quality. Beginning as just a local business in a small suburb outside of Los Angeles, CocoaLolo was founded to put an official brand name to all of the products our artist has been creating since 1992.
 				</p>
 			</div>
 			<div class="col-lg-5 offset-lg-1 col-sm-8 offset-sm-2 offset-md-0 col-md-5">
-				<img src="images/cocoaceo.jpg" class="img-fluid mx-auto d-block scroll-fx-right-in" alt="cocoaceo"/>
+				<img src="images/cocoaceo.jpg" class="img-fluid mx-auto d-block" alt="cocoaceo" data-aos="fade-left"/>
 			</div>
 		</div>
-	</div>
+  </div>
+  <!-- Contact Section -->
+  <div class="container py-5 text-center">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 m-auto">
+        <div class="contact-form">
+          <h1 class="cocoa-color">Get in Touch</h1>
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+              </div>
+            </div>            
+            <div class="form-group">
+              <label for="inputSubject">Subject</label>
+              <input type="text" class="form-control" id="inputSubject" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-warning"><i class="fa fa-paper-plane"></i> Send</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -115,9 +152,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
-  <script src="js/scrollFX.js"></script>
   <script src="https://kit.fontawesome.com/ca4397e826.js" crossorigin="anonymous"></script>
-  <scrip src="js/app.js"></scrip>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -47,6 +47,10 @@ body {
   color: #fc7702;
 }
 
+p {
+  font-size: 20px;
+}
+
 /* Hero Image */
 header {
   width: 100vw;
@@ -102,8 +106,8 @@ header button {
 
 header button:hover,
 button:active {
-  background-color: white;
-  color: black;
+  background-color: #fc7702;
+  color: #fff;
 }
 
 /* Products Section */
@@ -187,7 +191,7 @@ button:active {
 
 /* About Us Section */
 
-.about-us-h1 {
+.cocoa-color {
   color: #fc7702;
 }
 
