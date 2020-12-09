@@ -4,9 +4,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-}
-
-body {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: lighter;
 }
@@ -42,12 +39,12 @@ body {
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-  color: #555;
+  color: #fc7702;
   text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-  color: #555;
+  color: #fc7702;
 }
 
 /* Hero Image */
@@ -144,7 +141,7 @@ button:active {
   content: '';
   width: 100%;
   height: 10px;
-  background: #47c650;
+  background: #fc7702;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -169,7 +166,7 @@ button:active {
 .hover-5-title span {
   transition: all 0.4s;
   opacity: 0;
-  color: #47c650;
+  color: #fc7702;
 }
 
 .hover-5:hover .hover-overlay {
@@ -186,6 +183,16 @@ button:active {
 
 .hover-5:hover::after {
   bottom: 0;
+}
+
+/* About Us Section */
+
+.about-us-h1 {
+  color: #fc7702;
+}
+
+.ceo {
+  height: 500px;
 }
 
 /* Change navbar styling on small viewports */
