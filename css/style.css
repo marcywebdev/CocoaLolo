@@ -207,7 +207,7 @@ button:active {
 
 .footer a {
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   transition-duration: 0.2s;
 }
 
@@ -301,5 +301,27 @@ button:active {
   .navbar .navbar-brand,
   .navbar .nav-link {
     color: #555;
+  }
+
+  .social ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .social ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
   }
 }
